@@ -10,26 +10,37 @@ ITEMS = %w[Reference Category Status Officer Applicant Description
 class AppScraper
 
   def initialize
-    @app_details = []
+    @app_list = []
   end
 
-  def get_details_source(app_ref)
-    app_url = "#{URL_ROOT}Detail.aspx?s=1&r=" + app_ref
+  def scrape(app_list)
+    app_list.each do |ref|
+      details = get_page(app_ref, 'Detail')
+      timeline = get_page(app_ref, 'Timeline')
+    end
+  end
+
+  def get_page(app_ref, type)
+    app_url = "#{URL_ROOT}#{type}.aspx?s=1&r=" + app_ref
     source = Curl.get(app_url).body_str
   end
 
-  def parse_details(app_ref)
-    # source = get_details_source(app_ref)
+  def parse_details(source)
     table_data = source.split('pln-app')[1] # middle section of 3 is of interest
     table_split = table_data.split(DIV)
     ITEMS.each_with_index do |item, i|
       data = table_split[i + 1].split('<').first
       @app_details << data.split('>').last
     end
+    @app_details << parse_coords(source)
     @app_details
+  end
+
+  def parse_coords(source)
+
   end
 
 end # of class
 
-s = AppScraper.new
-s.parse_details("P/2013/0123").each {|data| puts data}
+scraper = AppScraper.new
+scraper.scrape(["P/2013/1874"]).each {|data| puts data}

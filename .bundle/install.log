@@ -1,0 +1,9 @@
+# Logfile created on 2014-01-07 21:28:25 +0000 by logger.rb/41954
+I, [2014-01-07T21:28:25.380719 #1302]  INFO -- : 0:  curb (0.8.5) from /Users/me/.rvm/gems/ruby-2.0.0-p353/specifications/curb-0.8.5.gemspec
+I, [2014-01-07T21:28:25.381282 #1302]  INFO -- : 0:  diff-lcs (1.2.5) from /Users/me/.rvm/gems/ruby-2.0.0-p353/specifications/diff-lcs-1.2.5.gemspec
+I, [2014-01-07T21:28:25.381679 #1302]  INFO -- : 0:  pg (0.17.1) from /Users/me/.rvm/gems/ruby-2.0.0-p353/specifications/pg-0.17.1.gemspec
+I, [2014-01-07T21:28:25.382065 #1302]  INFO -- : 0:  rspec-core (2.14.7) from /Users/me/.rvm/gems/ruby-2.0.0-p353/specifications/rspec-core-2.14.7.gemspec
+I, [2014-01-07T21:28:25.382435 #1302]  INFO -- : 0:  rspec-expectations (2.14.4) from /Users/me/.rvm/gems/ruby-2.0.0-p353/specifications/rspec-expectations-2.14.4.gemspec
+I, [2014-01-07T21:28:25.382805 #1302]  INFO -- : 0:  rspec-mocks (2.14.4) from /Users/me/.rvm/gems/ruby-2.0.0-p353/specifications/rspec-mocks-2.14.4.gemspec
+I, [2014-01-07T21:28:25.383174 #1302]  INFO -- : 0:  rspec (2.14.1) from /Users/me/.rvm/gems/ruby-2.0.0-p353/specifications/rspec-2.14.1.gemspec
+I, [2014-01-07T21:28:25.383530 #1302]  INFO -- : 0:  bundler (1.5.1) from /Users/me/.rvm/gems/ruby-2.0.0-p353/specifications/bundler-1.5.1.gemspec

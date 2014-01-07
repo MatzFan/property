@@ -7,4 +7,5 @@ group :development do
 end
 
 gem 'curb'
+gem 'pg'
 
