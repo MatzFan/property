@@ -1,4 +1,4 @@
-require 'open-uri'
+# require 'open-uri'
 require 'curb'
 
 URL_ROOT = 'https://www.mygov.je/Planning/Pages/PlanningApplication'
@@ -19,7 +19,7 @@ class AppScraper
   end
 
   def parse_details(app_ref)
-    source = get_details_source(app_ref)
+    # source = get_details_source(app_ref)
     table_data = source.split('pln-app')[1] # middle section of 3 is of interest
     table_split = table_data.split(DIV)
     ITEMS.each_with_index do |item, i|
